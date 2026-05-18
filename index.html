@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>אירה פרלמן | מיילדת</title>
+  <meta name="description" content="אירה פרלמן, מיילדת עם 14 שנות ניסיון. הכנה ללידה, ליווי בלידה ועיבוד לידה." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="ira-work.jpg" fetchpriority="high" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">דלגי לתוכן</a>
+
+
+<!-- ═══════════════════════════════════════════════
+     01 · HERO — full-viewport slider
+     ═══════════════════════════════════════════════ -->
+<section class="hero" aria-label="כותרת ראשית">
+
+  <div class="hero-slides" aria-hidden="true">
+    <div class="hero-slide hero-slide--photo active" data-num="01" data-label="הכנה ללידה"
+         style="--bg: url('ira-work.jpg')"></div>
+    <div class="hero-slide" data-num="02" data-label="ליווי בלידה"
+         style="--bg: linear-gradient(160deg, #2a1e1e 0%, #3d2a2a 60%, #1e1515 100%)"></div>
+    <div class="hero-slide" data-num="03" data-label="עיבוד לידה"
+         style="--bg: linear-gradient(160deg, #1a2a30 0%, #2b454e 60%, #0f1c20 100%)"></div>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-main">
+      ניסיון של אלפי לידות<br>
+      עכשיו כולו בשבילך
+    </h1>
+    <p class="hero-tagline">אירה פרלמן, מיילדת פרטית</p>
+
+    <nav class="hero-services" aria-label="שירותים">
+      <a href="#s01">הכנה ללידה</a>
+      <span aria-hidden="true">|</span>
+      <a href="#s02">ליווי בלידה</a>
+      <span aria-hidden="true">|</span>
+      <a href="#s04">עיבוד לידה</a>
+    </nav>
+
+    <a href="https://wa.me/972507790123" class="hero-cta"
+       target="_blank" rel="noopener noreferrer">בואי נכיר</a>
+  </div>
+
+  <div class="hero-strip">
+    <div class="hero-strip-inner">
+      <span class="hero-num" id="heroNum">01</span>
+      <span class="hero-label" id="heroLabel">הכנה ללידה</span>
+      <span class="hero-line" aria-hidden="true"></span>
+      <div class="hero-btns" role="group" aria-label="ניווט בין שקופיות">
+        <button class="hero-prev" aria-label="שקופית קודמת">←</button>
+        <span aria-hidden="true">/</span>
+        <button class="hero-next" aria-label="שקופית הבאה">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     NAV — sticky, appears directly below hero
+     ═══════════════════════════════════════════════ -->
+<nav class="site-nav" id="site-nav" aria-label="ניווט ראשי">
+  <a href="#hero" class="nav-logo" aria-label="חזרה לראש הדף — אירה פרלמן">
+    <span class="nav-logo-name">אירה פרלמן</span>
+    <span class="nav-logo-title">מיילדת</span>
+  </a>
+
+  <button class="hamburger" id="hamburger"
+          aria-expanded="false" aria-controls="nav-drawer" aria-label="פתח תפריט">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="תפריט ניווט">
+    <button class="nav-drawer-close" id="nav-close" aria-label="סגור תפריט">✕</button>
+    <ul>
+      <li><a href="#about">מי אני</a></li>
+      <li><a href="#s01">הכנה ללידה</a></li>
+      <li><a href="#s02">ליווי בלידה</a></li>
+      <li><a href="#s04">עיבוד לידה</a></li>
+      <li><a href="#contact">צרי קשר</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═══════════════════════════════════════════════
+     03 · SERVICES — teal bg, 3 photo cards
+     ═══════════════════════════════════════════════ -->
+<section class="services-block" id="services" aria-labelledby="services-h">
+  <header class="services-header">
+    <h2 class="services-main" id="services-h">מה נכון בשבילך?</h2>
+  </header>
+
+  <div class="services-cards">
+    <article class="service-card service-card--video">
+      <video class="service-card-vid" autoplay muted loop playsinline preload="none">
+        <source src="birth-prep.mp4" type="video/mp4">
+      </video>
+      <h3 class="service-card-label">הכנה ללידה</h3>
+    </article>
+
+    <article class="service-card service-card--video">
+      <video class="service-card-vid" autoplay muted loop playsinline preload="none">
+        <source src="lida-livuy.mp4" type="video/mp4">
+      </video>
+      <h3 class="service-card-label">ליווי בלידה</h3>
+    </article>
+
+    <article class="service-card service-card--video" onclick="location.href='#s04'" tabindex="0" role="link" aria-label="עיבוד לידה — פרטים נוספים">
+      <video class="service-card-vid" autoplay muted loop playsinline preload="none">
+        <source src="sea.mp4" type="video/mp4">
+      </video>
+      <h3 class="service-card-label">עיבוד לידה</h3>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     03b · SERVICE DETAIL — הכנה ללידה
+     ═══════════════════════════════════════════════ -->
+
+<section class="svc-detail svc-detail--cream" id="s01" aria-labelledby="s01-h">
+  <div class="svc-detail-inner">
+    <div class="svc-detail-content">
+
+      <h2 class="svc-detail-title" id="s01-h">הכנה ללידה</h2>
+
+      <div class="svc-detail-quotes">
+        <p>"איך אני אעמוד בזה?"</p>
+        <p>"אני רוצה חוויה טובה ולא טראומטית."</p>
+      </div>
+
+      <p class="svc-detail-body">הלידה היא חוויה שאין לה שידור חוזר. את יכולה להגיע אליה עם שקט נפשי, כלים שבאמת עובדים ובן זוג שיודע בדיוק מה תפקידו.</p>
+
+      <p class="svc-detail-body">אני מיילדת עם 14 שנות ניסיון בחדרי לידה, ראיתי אלפי לידות מבפנים, ואני יודעת בדיוק איפה נשים נתקעות, מה באמת עוזר, ומה קורה כשמגיעים בלי הכנה. ועכשיו כל הידע הזה עומד לרשותך.</p>
+
+      <!-- ── זה בשבילך אם את ── -->
+      <div class="fit-section">
+        <h3 class="svc-detail-sub svc-fit-heading">זה בשבילך אם את…</h3>
+        <ul class="fit-list" aria-label="למי מיועד המפגש">
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">01</span>
+            <div>
+              <strong>מוצפת במידע ועדיין מרגישה שהולכת אל הלא נודע</strong>
+              <p>יש לך המון מידע, אבל את לא באמת יודעת מה לעשות איתו. ההמלצות סותרות, והבלבול רק גדל.</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">02</span>
+            <div>
+              <strong>חוששת מאובדן שליטה</strong>
+              <p>לא מוכנה שיחליטו עלייך, או שתרגישי שקופה בלידה שלך. שתצטרכי להסכים להכל רק כי את לא באמת מבינה.</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">03</span>
+            <div>
+              <strong>פוחדת מהתערבויות וסיבוכים</strong>
+              <p>שמעת מלא סיפורים על לידה טראומטית ורוצה לדעת איך להתנהל נכון כדי ששלך תהיה טובה.</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">04</span>
+            <div>
+              <strong>רוצה שבן הזוג יהיה שותף מלא</strong>
+              <p>ובשביל זה הוא צריך לדעת בדיוק מה לעשות. וזה הרבה יותר מלהחזיק לך את היד ולהגיד "כל הכבוד לך".</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">05</span>
+            <div>
+              <strong>מעדיפה תהליך אישי</strong>
+              <p>רואה ערך בהכנה שהיא שיחה מרתקת, מלאה בהתאמות אישיות, על פני למידה קבוצתית.</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">06</span>
+            <div>
+              <strong>רוצה ללמוד ממיילדת</strong>
+              <p>שתסביר לך איך הדברים באמת עובדים. מה חשוב, מה לא, איך להבדיל ביניהם ועל סמך מה לקבל החלטות.</p>
+            </div>
+          </li>
+          <li class="fit-item">
+            <span class="fit-num" aria-hidden="true">07</span>
+            <div>
+              <strong>רגילה לקחת אחריות</strong>
+              <p>רוצה להבין למה, מה ואיך לעשות כדי שיהיה טוב. לא מסתפקת בלקוות, אלא עושה.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="svc-detail-sub">מה קורה במפגש</h3>
+
+      <p class="svc-detail-body">פגישה אישית זוגית של כ-4 שעות: בקליניקה בתל אביב, אצלך בבית, או בזום. אנחנו מתחילות ממך: מה מפחיד, מה חשוב, מה היית רוצה שיקרה. מתוך זה בונות תוכנית שהיא בדיוק בשבילכם.</p>
+
+      <p class="svc-detail-body">זוגות באים למפגש עם תחושת לא-נודע, ויוצאים עם המון שקט. כי בתוך שעות בודדות, הם מבינים שללידה יש מבנה. מסתבר שאפשר להתכונן, וכל המידע שהציף אתכם מקבל סדר.</p>
+
+      <p class="svc-detail-body">יש לי כלים ספציפיים לכל שלב. אנחנו לומדים ביחד מתי ואיך להשתמש בהם.</p>
+
+      <p class="svc-detail-body">ובן הזוג? בסוף המפגש הוא תמיד אומר: "עכשיו אני יודע בדיוק מה תפקידי שם. לא תארתי לעצמי שיש לי כל כך הרבה מה לתת."</p>
+
+      <h3 class="svc-detail-sub">את יוצאת עם</h3>
+
+      <div class="takeaway-cards">
+        <div class="takeaway-card">קבצי אודיו לביטחון והרפיה שיקלו עלייך ברגע האמת</div>
+        <div class="takeaway-card">סרטוני תנועה מותאמים לשלבי הלידה, כדי שלא תצטרכי לזכור כלום תחת לחץ</div>
+        <div class="takeaway-card">שיטה לקבלת החלטות חכמות בחדר לידה: כשמציעים לך התערבויות, וכשאין לך מושג מה לענות חוץ מלהנהן מול חלוק לבן - תדעו בדיוק מה לשאול כדי לקבל החלטות חכמות</div>
+        <div class="takeaway-card">זמינות שלי עד הלידה. הציעו לזרז? מרגישה שמשהו לא בסדר? כותבת לי.</div>
+      </div>
+
+      <h3 class="svc-bonus-heading">הכנה להנקה - מתנה ממני</h3>
+
+      <div class="svc-bonus-card">
+        <p class="svc-bonus-title">סדנת הכנה להנקה מוקלטת</p>
+        <p class="svc-bonus-body">עם יועצת הנקה מוסמכת. כי ברגעים הראשונים אחרי הלידה את לא צריכה להתחיל לחפש תשובות. הכל כבר שם, מוכן בשבילך.</p>
+        <ul class="svc-bonus-list">
+          <li>מה עוזר לתינוק לינוק נכון</li>
+          <li>איך יודעים אם התינוק אוכל מספיק</li>
+          <li>איך למנוע פצעים, כאבים ותסכול</li>
+          <li>מתי לפנות לעזרה, ואיך לזהות סימנים מראש</li>
+        </ul>
+      </div>
+
+      <div class="svc-detail-price">
+        <p>1,700 ₪ | ניתן לחלק לתשלומים</p>
+        <p>ניתן לקבל <strong>עד 80% החזר</strong> דרך קופת חולים, ביטוח פרטי וקרן מילואים</p>
+        <p class="svc-legal-note">ביטול עסקה: בהתאם לחוק הגנת הצרכן ניתן לבטל בתוך 14 ימים. <button class="text-btn" onclick="document.getElementById('modal-cancel').showModal()">קראי את מדיניות הביטול המלאה</button></p>
+      </div>
+
+      <p class="svc-detail-cta-sub">יש שאלות? רוצה להכיר לפני שמחליטים? תכתבי לי בוואטסאפ.</p>
+      <a href="https://wa.me/972507790123" class="btn-outline"
+         target="_blank" rel="noopener noreferrer">תכתבי לי בוואטסאפ</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     03b-faq · שאלות שבטח יש לך — הכנה ללידה
+     ═══════════════════════════════════════════════ -->
+<section class="faq-section" id="s01-faq" aria-labelledby="faq-h">
+  <div class="faq-inner">
+    <h2 class="faq-heading" id="faq-h">שאלות שבטח יש לך</h2>
+
+    <dl class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-q">אבל זו רק פגישה אחת, זה יספיק?</summary>
+        <div class="faq-a">
+          <p>זו פגישה ממוקדת שמביאה תוצאה כבר עכשיו. במקום להעמיס מידע שנשכח, אנחנו מתמקדות בדיוק במה שחשוב לך. "לא האמנתי שארגיש כל כך אחרת תוך ארבע שעות."</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">אולי פשוט אקח קורס של קופת חולים?</summary>
+        <div class="faq-a">
+          <p>הוא כללי, קבוצתי, ולרוב מדלג על המון דברים סופר חשובים. כל החלק של טכניקות הרפיה, הפגת פחדים, התאמת תוכנית פעולה אישית וקבלת החלטות? תשכחי ממנו. כאן את מקבלת בדיוק את מה שאת צריכה, בלי הסחות דעת ובלי מידע מיותר.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">הכול לא צפוי בלידה, אי אפשר להתכונן</summary>
+        <div class="faq-a">
+          <p>אי אפשר לדעת מה יקרה. אבל אפשר לדעת איך להתמודד. וכשאת יודעת מה לעשות, איך להקל על עצמך ומה כדאי, את מרגישה שאת בשליטה גם אם משהו משתנה.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">למה להכניס פחדים לראש?</summary>
+        <div class="faq-a">
+          <p>בדיוק ההפך. מפוגגים את הפחד. עושים סדר, מורידים לחץ, ומחזירים שליטה. כי פתאום מסתבר שמה שחשבת הוא בכלל לא נכון, ומה שנכון כמעט ולא מפחיד.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">יש לי סף כאב נמוך…</summary>
+        <div class="faq-a">
+          <p>מושלם. זה בדיוק בשבילך. עם הכלים שתקבלי, תופתעי מעצמך. "הפתעתי את עצמי ממש!"</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">אני לא בטוחה שבן הזוג שלי יזרום עם זה…</summary>
+        <div class="faq-a">
+          <p>רוב בני הזוג לא יודעים איך לתמוך עד שהם מגיעים. בסוף המפגש, הם תמיד אומרים: "עכשיו אני יודע בדיוק מה לעשות. לא תארתי לעצמי שיש לי משמעות כל כך גדולה."</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">אני רוצה לידה טבעית, הקורס מתאים?</summary>
+        <div class="faq-a">
+          <p>הגעת בדיוק למקום הנכון. אם לידה טבעית ומעצימה, בלי אפידורל, זה מה שאת רוצה, יש לי המון מה ללמד אותך. טכניקות שיכוח כאב עצמי מעולם ה-Hypnobirthing הן ההתמחות שלי. אם תרצי להעמיק, תקבלי חומרים מוקלטים ואהיה זמינה לך להכוונה.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">באיזה שבוע מומלץ לעשות הכנה?</summary>
+        <div class="faq-a">
+          <p>סביב שבוע 29–30. מוקדם מספיק כדי שיהיה זמן לתרגל, ומאוחר מספיק כדי שהכל יהיה רענן בזיכרון לקראת הלידה.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">איפה נפגשים?</summary>
+        <div class="faq-a">
+          <p>בקליניקה נעימה בתל אביב (קרוב לתחנת רכבת השלום), אצלכם בבית, או בזום אם זה יותר נוח. אם הזום, נחלק לשני מפגשים של שעתיים.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">כמה זמן המפגש?</summary>
+        <div class="faq-a">
+          <p>כארבע שעות עם הפסקה. זה הזמן שצריך כדי לא למהר, לתרגל בפועל ולצאת עם תחושה שהכל ירד על מקום.</p>
+        </div>
+      </details>
+
+    </dl>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     BRIDGE — הכנה ללידה → ליווי בלידה
+     ═══════════════════════════════════════════════ -->
+<section class="svc-bridge" aria-label="ליווי בלידה — הזמנה">
+  <div class="svc-bridge-inner">
+    <p class="svc-bridge-eyebrow">ואולי גם את רוצה אותי שם, בלידה עצמה</p>
+    <h2 class="svc-bridge-heading">רוצה שנעשה<br>את זה יד ביד?</h2>
+    <a href="#s02" class="svc-bridge-cta">קראי על ליווי בלידה</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     03c · SERVICE DETAIL — ליווי בלידה
+     ═══════════════════════════════════════════════ -->
+<section class="svc-detail svc-detail--white" id="s02" aria-labelledby="s02-h">
+  <div class="svc-detail-inner">
+    <div class="svc-detail-content">
+
+      <h2 class="svc-detail-title" id="s02-h">ליווי בלידה</h2>
+
+      <p class="svc-detail-body">כשאת נכנסת לחדר לידה בלי מלווה, את נכנסת לשטח של מישהו אחר. המיילדת שם אחראית על הרבה נשים במקביל: נכנסת, בודקת, יוצאת. בן הזוג רוצה לעזור ולא תמיד יודע מה לעשות.</p>
+
+      <p class="svc-detail-body">כשאת מגיעה עם מלווה, הכל אחרת. יש מישהי שמכירה אותך באמת, שיודעת מה חשוב לך, מה מפחיד אותך, מה חשוב לך שיקרה. שמכירה את האופציות שעל השולחן ומספרת לך עליהן.</p>
+
+      <!-- ── זה בשבילך אם את ── -->
+      <div class="fit-section s02-fit-section">
+        <h3 class="svc-detail-sub svc-fit-heading">זה בשבילך אם את…</h3>
+        <ul class="fit-list" aria-label="זה בשבילך אם את">
+
+          <li class="fit-item">
+            <div>
+              <p>רוצה ללדת בבית חולים, אבל לא להרגיש חלק מפס ייצור</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <p>רוצה שמישהי תסביר לך מה קורה, בשפה שלך, בזמן אמת. ושתוכלי לקבל החלטות מתוך הבנה, לא מתוך לחץ</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <p>רוצה כמה שפחות התערבויות, ורוצה שמישהי תדע מתי הן מוצדקות ומתי לא</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <p>לא רוצה לנהל את הלידה. את רוצה להיות בה, ולדעת שיש מישהי שעוטפת אותך ודואגת רק לאינטרסים שלך</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <p>עברת לידה שלא הייתה מה שקיווית, ואת רוצה שהפעם יהיה אחרת</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <p>חוששת מכאב, מאובדן שליטה, ומהרגע שבו תהיי כואבת ולא במיטבך ומישהו יחליט בשבילך</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- ── השוואה: דולה / מיילדת בית חולים / מיילדת מלווה ── -->
+      <div class="compare-intro">
+        <div class="compare-intro-nots">
+          <span>לא דולה</span>
+          <span class="compare-intro-sep" aria-hidden="true">·</span>
+          <span>לא מיילדת בית חולים</span>
+        </div>
+        <p class="compare-intro-yes">מיילדת שבחרת, והיא רק שלך. השילוב שלא ידעת שאת יכולה לקבל.</p>
+      </div>
+
+      <div class="compare-wrap">
+        <div class="compare-grid" role="table" aria-label="השוואה בין סוגי מלוות">
+
+          <div class="compare-th compare-th--blank" role="columnheader"></div>
+          <div class="compare-th" role="columnheader">דולה</div>
+          <div class="compare-th" role="columnheader">מיילדת<br>בית חולים</div>
+          <div class="compare-th compare-th--featured" role="columnheader">מיילדת<br>מלווה</div>
+
+          <div class="compare-label" role="rowheader">בודקת פתיחה ותומכת בך עוד משלב הבית</div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes compare-feat" role="cell"><span aria-label="כן">✓</span></div>
+
+          <div class="compare-label" role="rowheader">יודעת לפענח מה שלום התינוק, לפי המוניטור</div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes" role="cell"><span aria-label="כן">✓</span></div>
+          <div class="compare-cell compare-yes compare-feat" role="cell"><span aria-label="כן">✓</span></div>
+
+          <div class="compare-label" role="rowheader">ייעוץ רפואי אחראי</div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes" role="cell"><span aria-label="כן">✓</span></div>
+          <div class="compare-cell compare-yes compare-feat" role="cell"><span aria-label="כן">✓</span></div>
+
+          <div class="compare-label" role="rowheader">מייצגת רק אותך</div>
+          <div class="compare-cell compare-yes" role="cell"><span aria-label="כן">✓</span></div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes compare-feat" role="cell"><span aria-label="כן">✓</span></div>
+
+          <div class="compare-label" role="rowheader">מכירה אותך לפני הלידה</div>
+          <div class="compare-cell compare-yes" role="cell"><span aria-label="כן">✓</span></div>
+          <div class="compare-cell compare-no" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes compare-feat" role="cell"><span aria-label="כן">✓</span></div>
+
+          <div class="compare-label compare-label--last" role="rowheader">נוכחות רציפה ומלאה</div>
+          <div class="compare-cell compare-yes compare-cell--last" role="cell"><span aria-label="כן">✓</span></div>
+          <div class="compare-cell compare-no compare-cell--last" role="cell"><span aria-label="לא">✗</span></div>
+          <div class="compare-cell compare-yes compare-feat compare-cell--last" role="cell"><span aria-label="כן">✓</span></div>
+
+        </div>
+      </div>
+
+      <!-- ── איך זה עובד ── -->
+      <h3 class="svc-detail-sub s02-how-heading">איך זה עובד</h3>
+      <div class="fit-section">
+        <ul class="fit-list" aria-label="איך זה עובד">
+
+          <li class="fit-item">
+            <div>
+              <span class="s02-phase-num" aria-hidden="true">01</span>
+              <strong>לאורך כל ההריון</strong>
+              <p>מרגע שיצאנו לדרך, אני מעורבת בכל מה שקורה בהריון שלך. שאלה בשתיים בלילה, תוצאת בדיקה שמבלבלת, תחושה שמשהו לא בסדר, אני כאן. לא ממתינה לבוקר. מגיבה, מסבירה, מרגיעה. כדי שתוכלי לישון.</p>
+              <p>סביב שבוע 32–33 נפגש פעמיים להיכרות מעמיקה והכנה טובה. עד אז, כל מה שעולה מגיע אלי. המענה שלי הוא לא תשובה גנרית, הוא תשובה שמכירה אותך ואת ההריון הספציפי שלך.</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <span class="s02-phase-num" aria-hidden="true">02</span>
+              <strong>בבית, כשהלידה מתחילה</strong>
+              <p>אם צריך, אני מגיעה אלייך. וכאן ההבדל שמשנה הכל: אני יכולה לבדוק פתיחה ולנטר את דופק התינוק. לא מנחשות. יודעות בדיוק איפה הלידה עומדת.</p>
+              <p>מתוך זה מחליטות ביחד מתי הזמן הנכון לצאת למיון. כשאת יוצאת מהבית בשלב הנכון, רגועה, בסביבה שלך, מגיעה לחדר הלידה אחרת לגמרי.</p>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <span class="s02-phase-num" aria-hidden="true">03</span>
+              <strong>בחדר הלידה</strong>
+              <p>המערכת הרפואית עושה את העבודה הרפואית. אבל אף אחד שם לא עוצר לשאול איך את מרגישה. לא רואה מה את צריכה עכשיו. לא אומר לך שאת עושה את זה, ומתכוון לזה.</p>
+              <p>העיניים שרואות את מה שאת צריכה, ונותנות לך את זה.</p>
+              <div class="fit-subitems">
+                <div class="fit-subitem">
+                  <h4 class="fit-subitem-title">עוטפת ודואגת לך לאורך כל הדרך</h4>
+                  <p>לידה זה לא רק כאב. זה גם התחושה שאת לא יודעת מה קורה, לא יודעת מה לעשות עכשיו, ואין מי שיגיד לך. חוסר אונים בתוך משהו שהוא גם הכי גדול שעברת.</p>
+                  <p>אני שם בשביל זה. רואה אותך, מזהה מתי הגוף מתוח, מתי צריך לזוז, מתי צריך לנשום. עיסוי בגב, כניסה למקלחת, יד מלטפת. הכוונה ברגע עצמו, לא תיאוריה שאת צריכה לזכור בלחץ, אלא פשוט לתת לגוף שלך לעשות את מה שהוא נועד לעשות.</p>
+                </div>
+                <div class="fit-subitem">
+                  <h4 class="fit-subitem-title">לידה שבוודאות תהיה יותר טובה</h4>
+                  <p>הצוות עסוק, ומנהל כמה נשים במקביל. הם לא יעמדו איתך שעות ויעשו איתך תרגילים ממוקדים. לא יכוונו אותך לתנועות שמקדמות את הלידה, לרוגע, להרפיה, לנשימה שמשחררת את הגוף.</p>
+                  <p>אני כן. תנועה נכונה בשלב הנכון עוזרת לתינוק להתמצב טוב יותר באגן, נשימה ורוגע משנים את הקצב, וביחד הם מקצרים לידות, מפחיתים מצוקה של תינוק, ולפעמים מונעים ניתוח.</p>
+                </div>
+                <div class="fit-subitem">
+                  <h4 class="fit-subitem-title">מגנה רק על האינטרסים שלך, בלי קשר לעומסים ופרוטוקולים</h4>
+                  <p>כשהצוות מציע התערבויות, הם לא תמיד מרחיבים בהסברים ולא תמיד מספרים לך מה החלופות. ואת, מתוך חוסר הבנה, עייפות וכאב, פשוט מנהנהת.</p>
+                  <p>אני מכירה את מה שקורה בחדר לידה. יודעת מתי מה שמציעים לך משרת אותך, ומתי זה ממש לא מה שאת צריכה. מסבירה לך מה קורה ומה האופציות, בשפה שמובנת. מה שלא מוסבר, הדמיון ממלא. ושנים אחרי, נשים מסתובבות עם תחושה רעה שלא הייתה חייבת להיות שם.</p>
+                </div>
+                <div class="fit-subitem">
+                  <h4 class="fit-subitem-title">בן הזוג הופך לשותף אמיתי</h4>
+                  <p>גברים מגיעים לחדר לידה עם רצון טוב ולפעמים ממש בלי מושג מה לעשות. אני מכוונת אותו: מזכירה, מדגימה, ואז עושה צעד אחורה כדי שהוא יוביל. הוא לא צריך לנהל לוגיסטיקה, לא לזכור כלום מההכנה, אלא פשוט להיות נוכח ולהתמסר לתהליך הזה איתך.</p>
+                  <p>יש זוגות שרוצים שבן הזוג יהיה הדמות המשמעותית ביותר בתוך הרגעים האינטימיים האלה. כשזה נכון לכם, אני תומכת בזה בכל כוחי ועובדת דרכו. ויש זוגות שהדינמיקה שם אחרת. על זה אנחנו מדברים לפני, ואני שם בשביל מה שנכון לכם.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="fit-item">
+            <div>
+              <span class="s02-phase-num" aria-hidden="true">04</span>
+              <strong>אחרי הלידה</strong>
+              <p>מוודאה שאת בטוב, עוזרת לך להתחיל להניק, ואם לא הנקה, אז בסחיטת החלב הראשוני. בודקת שאת לא מדממת יותר מדי. הולכת רק כשאני יודעת שכולכם בסדר.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- ── שאלות נפוצות ── -->
+      <div class="s02-faq">
+        <h3 class="s02-faq-heading">שאלות שאולי עולות לך</h3>
+
+        <details class="s02-faq-item">
+          <summary class="s02-faq-q">מה אם תהיי בלידה אחרת כשאני בצירים?</summary>
+          <div class="s02-faq-a">
+            <p>הסיכוי שאהיה בלידה אחרת בדיוק כשאת מתקשרת קיים. לא גבוה, אבל לא אגיד לך שזה לא יכול לקרות. לכן יש לי שתי מיילדות מלוות שבחרתי בפינצטה ואני סומכת עליהן. הן מכירות את הגישה שלי, עובדות בדיוק ככה, ואני יכולה לעמוד מאחוריהן. אם אני תפוסה כשתתקשרי, אחת מהן מגיעה. כשאני מתפנה, תחליטי מה מרגיש לך נכון: היא נשארת איתך עד הסוף, או שאני מגיעה ומחליפה.</p>
+          </div>
+        </details>
+
+        <details class="s02-faq-item">
+          <summary class="s02-faq-q">מה קורה אם אני יולדת בניתוח קיסרי?</summary>
+          <div class="s02-faq-a">
+            <p>תלוי מאיפה מגיעים אליו.</p>
+            <p>אם הניתוח מתוכנן מראש, יש נשים שרוצות שאהיה שם גם בחדר ניתוח, ויש שלא. אם את רוצה, נדבר. אם לא, מה שקורה מבחינת התשלום במצב כזה מפורט בחוזה.</p>
+            <p>אם הגענו לקיסרי תוך כדי הלידה, הייתי שם כל הדרך. ממשיכים ביחד גם אחרי.</p>
+          </div>
+        </details>
+
+        <details class="s02-faq-item">
+          <summary class="s02-faq-q">מתי הכי נכון להתחיל?</summary>
+          <div class="s02-faq-a">
+            <p>בכל שלב שאת מרגישה שאת רוצה את המעטפת הזאת. יש נשים שמגיעות להבנה הזאת מוקדם מאוד בהריון. יש כאלה שממש לקראת הלידה. כל אחת ומה שמרגיש לה.</p>
+          </div>
+        </details>
+
+        <details class="s02-faq-item">
+          <summary class="s02-faq-q">איך הצוות הרפואי יתייחס לנוכחות שלך?</summary>
+          <div class="s02-faq-a">
+            <p>הצוות לא מתפלא כשנכנסת מלווה מקצועית לחדר, זה חלק מהתמונה. לפעמים אני מכירה את המיילדות שם, ולפעמים לא, אבל בשני המקרים נוכחות של מישהי שמכירה את השפה משנה את הדינמיקה בחדר. את לא לבד מול מערכת שלמה.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="svc-detail-cta-block">
+        <p class="svc-detail-cta-lead">מרגיש נכון? בואי נדבר.</p>
+        <p class="svc-detail-cta-sub">שיחת היכרות קצרה, בלי התחייבות.</p>
+        <a href="https://wa.me/972507790123" class="btn-outline"
+           target="_blank" rel="noopener noreferrer">תכתבי לי בוואטסאפ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     04 · עיבוד לידה — blush, split: photo | text
+     ═══════════════════════════════════════════════ -->
+<section class="extra-service extra-service--no-media" id="s04" aria-labelledby="s04-h">
+  <div class="extra-text">
+    <h2 class="extra-heading" id="s04-h">עיבוד לידה</h2>
+    <p class="extra-body">
+      לפעמים הלידה לא הייתה מה שדמיינת. שיחה, עיבוד ופשוט מישהי שמבינה, יכולים לשנות הכל.
+    </p>
+    <a href="#contact" class="btn-outline">לפרטים נוספים</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     05 · ABOUT — gold bg, text | photo card
+     ═══════════════════════════════════════════════ -->
+<section class="about" id="about" aria-labelledby="about-h">
+  <div class="about-text">
+    <div class="about-photo-float">
+      <div class="about-photo"
+           style="--bg: url('ira-portrait.jpg')"
+           role="img" aria-label="אירה פרלמן — תמונת פרופיל"></div>
+    </div>
+    <span class="about-eyebrow">מי אני</span>
+    <span class="about-script">אירה פרלמן, מיילדת</span>
+
+    <h2 class="about-heading" id="about-h">
+      14 שנה בחדרי לידה.<br>
+      הפעם, בצד שלך בלבד.
+    </h2>
+
+    <p class="about-body">
+      14 שנה עבדתי בחדרי לידה. לפני זמן לא רב עזבתי, כדי להיות פנויה לחלוטין לזוגות שאני מלווה באופן פרטי.
+    </p>
+
+    <p class="about-body">
+      כי אני מאמינה בדבר אחד בכל ליבי: יש לך יכולת משמעותית להשפיע על הלידה שלך. וזה פשוט פשע לא לעשות את זה.
+    </p>
+
+    <p class="about-body">
+      אני מכירה את הזוגות שלי לעומק. בונה יחד איתם את הדרך. לומדים מה צפוי, מה בשליטה ומה לא, ואיך לפעול כשהמציאות מפתיעה. אני מביאה איתי את כל העולמות: ידע רפואי, מגע, שיטות הרפיה עמוקה, תנועה, כל מה שעוזר לגוף לעשות את העבודה שלו ברכות ובביטחון.
+    </p>
+
+    <p class="about-body">
+      בסוף, מה שאני נותנת הוא שקט. הידיעה שמי שמחזיקה אותך יודעת בדיוק מה לעשות עם מה שיש, ומלווה אותך יד ביד, כל הדרך.
+    </p>
+
+    <a href="#contact" class="btn-outline">בואי נכיר</a>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     05 · CREDENTIALS — teal strip, logos
+     ═══════════════════════════════════════════════ -->
+<section class="credentials" aria-label="הסמכות ושיתופי פעולה">
+  <div class="credentials-inner">
+    <div class="stat-item">
+      <span class="stat-num">14</span>
+      <span class="stat-label">שנות ניסיון בחדרי לידה</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">8,000+</span>
+      <span class="stat-label">לידות קיבלתי</span>
+    </div>
+    <div class="stat-item stat-item--cert">
+      <span class="stat-cert">מומחית לטכניקות הרפיה עמוקה</span>
+    </div>
+    <div class="stat-item stat-item--cert">
+      <span class="stat-cert">מטפלת ברפואה משלימה</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">10,500+</span>
+      <span class="stat-label">עוקבות באינסטגרם</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">24/7</span>
+      <span class="stat-label">זמינות</span>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════════════════════════════════════
+     08 · TESTIMONIALS
+     ═══════════════════════════════════════════════ -->
+<section class="testimonials-section" aria-labelledby="testimonials-h">
+  <div class="testimonials-inner">
+    <h2 class="testimonials-heading" id="testimonials-h">המלצות</h2>
+  </div>
+
+  <div class="wa-gallery-wrap">
+    <div class="wa-gallery">
+      <div class="wa-frame"><img src="wa-1.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-2.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-3.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-4.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-5.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-6.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-7.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-8.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-9.jpg"  alt="המלצה בוואטסאפ" loading="lazy"></div>
+      <div class="wa-frame"><img src="wa-10.jpg" alt="המלצה בוואטסאפ" loading="lazy"></div>
+    </div>
+    <p class="wa-hint">גללי לעוד ←</p>
+  </div>
+
+  <div class="testimonials-inner">
+    <a href="https://www.instagram.com/ira.perelman" class="testimonials-ig-btn"
+       target="_blank" rel="noopener noreferrer">
+      עוד המלצות עם תיוגים, בהיילייטס באינסטגרם
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     09 · YOUTUBE
+     ═══════════════════════════════════════════════ -->
+<section class="yt-section" aria-labelledby="yt-h">
+  <div class="yt-inner">
+    <span class="yt-eyebrow">ערוץ היוטיוב שלי</span>
+    <h2 class="yt-heading" id="yt-h">הדרכות מעשיות ומדיטציה ללידה רכה</h2>
+    <p class="yt-sub">לצפות, להתכונן, ליישם</p>
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube.com/embed/VPXaHqVqn8U"
+        title="הדרכה של אירה פרלמן — מיילדת"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"></iframe>
+    </div>
+    <a href="https://www.youtube.com/@iraperelman"
+       class="btn-outline btn-outline-light"
+       target="_blank" rel="noopener noreferrer">לכל ההדרכות בערוץ</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     10 · INSTAGRAM STRIP
+     ═══════════════════════════════════════════════ -->
+<section class="ig-strip" aria-label="אינסטגרם">
+  <p class="ig-strip-text">תכנים יומיומיים על הריון, לידה והנקה</p>
+  <div class="ig-strip-mid">
+    <span class="ig-strip-num">10,500+</span>
+    <span class="ig-strip-label">עוקבות באינסטגרם</span>
+  </div>
+  <a href="https://www.instagram.com/ira.perelman"
+     class="btn-outline ig-strip-btn"
+     target="_blank" rel="noopener noreferrer">עקבי אחרי ←</a>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     08b · PRODUCTS — מוצרים מומלצים
+     ═══════════════════════════════════════════════ -->
+<section class="products-section" aria-labelledby="products-h">
+  <div class="products-inner">
+    <span class="products-eyebrow">המלצות שלי</span>
+    <h2 class="products-heading" id="products-h">מוצרים שאני ממליצה עליהם</h2>
+
+    <div class="products-grid">
+
+      <!-- TENS -->
+      <article class="product-card">
+        <!-- placeholder: החליפי ב-<img src="tens.jpg" alt="מכשיר TENS ללידה"> -->
+        <div class="product-img" role="img" aria-label="מכשיר TENS ללידה"
+             style="--bg: linear-gradient(135deg,#2a3a40,#1a2530)"></div>
+        <div class="product-body">
+          <h3 class="product-name">מכשיר TENS ללידה</h3>
+          <p class="product-desc">מכשיר TENS הוא אחד הדברים שאני ממליצה עליו לכל אישה שרוצה כלי עצמאי לניהול כאב בצירים, לא תרופתי, לא מגביל. שמה מדבקות על הגב, שולטת בעוצמה לבד, ובצירים חזקים לוחצת על BOOST.</p>
+          <div class="product-coupon">
+            <span class="product-coupon-label">קוד קופון</span>
+            <span class="product-coupon-code">אירהפרלמן</span>
+            <span class="product-coupon-benefit">+ סט מדבקות נוסף חינם</span>
+          </div>
+          <a href="https://tzirim.co.il/product/elle-tens-2/" class="btn-outline product-btn"
+             target="_blank" rel="noopener noreferrer">להזמנה</a>
+        </div>
+      </article>
+
+      <!-- ANABELLE — placeholder: להשלים קוד קופון וקישור -->
+      <article class="product-card">
+        <!-- placeholder: החליפי ב-<img src="anabelle.jpg" alt="משאבת אנאבלה"> -->
+        <div class="product-img" role="img" aria-label="משאבת אנאבלה"
+             style="--bg: linear-gradient(135deg,#3a2a30,#251520)"></div>
+        <div class="product-body">
+          <h3 class="product-name">משאבת אנאבלה</h3>
+          <p class="product-desc"><!-- placeholder: טקסט המלצה על אנאבלה --></p>
+          <div class="product-coupon">
+            <span class="product-coupon-label">קוד קופון</span>
+            <span class="product-coupon-code"><!-- placeholder: קוד --></span>
+            <span class="product-coupon-benefit">10% הנחה</span>
+          </div>
+          <a href="#" class="btn-outline product-btn"
+             target="_blank" rel="noopener noreferrer">לרכישה</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     10 · CTA — cream
+     ═══════════════════════════════════════════════ -->
+<section class="cta-section" id="contact" aria-labelledby="cta-h">
+  <h2 class="cta-heading" id="cta-h">מתחברת לגישה שלי?<br>תכתבי לי ונכיר</h2>
+  <a href="https://wa.me/972507790123"
+     class="btn-cta"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="פתחי שיחה עם אירה פרלמן בוואטסאפ">
+    תכתבי לי בוואטסאפ
+  </a>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER — teal
+     ═══════════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-arc" aria-hidden="true"></div>
+
+  <div class="footer-grid">
+
+    <div class="footer-col footer-contact">
+      <p class="footer-phone"><!-- placeholder: 050-000-0000 --></p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ira.perelman"
+           aria-label="אינסטגרם" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/972507790123"
+           aria-label="וואטסאפ" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@iraperelman"
+           aria-label="יוטיוב" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+            <polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-brand">
+      <a href="#" class="footer-logo" aria-label="חזרה לראש הדף">אירה פרלמן</a>
+    </div>
+
+    <nav class="footer-col footer-nav-col" aria-label="תפריט footer">
+      <h3 class="footer-nav-heading">תפריט</h3>
+      <div class="footer-nav-cols">
+        <ul>
+          <li><a href="#intro">בית</a></li>
+          <li><a href="#about">מי אני</a></li>
+          <li><a href="#s01">הכנה ללידה</a></li>
+        </ul>
+        <ul>
+          <li><a href="#s02">ליווי בלידה</a></li>
+          <li><a href="#s04">עיבוד לידה</a></li>
+          <li><a href="#contact">צרי קשר</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- גילוי נאות — חוק הגנת הצרכן + תיקון 13 לחוק הגנת הפרטיות -->
+  <div class="footer-legal">
+    <div class="footer-legal-details">
+      <span>אירה פרלמן | עוסק מורשה</span>
+      <span>ע.מ: 306604380</span>
+      <span>כתובת: תל אביב</span>
+      <span>טלפון: <a href="tel:+972507790123">050-779-0123</a></span>
+      <span>דוא"ל: <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a></span>
+    </div>
+    <div class="footer-legal-links">
+      <button class="footer-legal-btn" onclick="document.getElementById('modal-cancel').showModal()">מדיניות ביטול עסקה</button>
+      <span aria-hidden="true">·</span>
+      <button class="footer-legal-btn" onclick="document.getElementById('modal-privacy').showModal()">מדיניות פרטיות</button>
+    </div>
+  </div>
+
+  <p class="footer-copy">© אירה פרלמן 2026. כל הזכויות שמורות.</p>
+
+  <div class="footer-accessibility" id="accessibility-statement" role="note" aria-label="הצהרת נגישות">
+    <p>
+      <strong>הצהרת נגישות.</strong> אתר זה עומד ברמת AA של תקן
+      <abbr title="Web Content Accessibility Guidelines 2.1">WCAG 2.1</abbr>,
+      בהתאם לתיקון 35 לחוק שוויון זכויות לאנשים עם מוגבלות.
+      נבדק לאחרונה: מאי 2026.
+      לפניות בנושא נגישות:
+      <a href="mailto:ira.perelman@gmail.com" aria-label="שלחי מייל בנושא נגישות">ira.perelman@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/972507790123"
+   class="wa-float"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="שלחי הודעה לאירה פרלמן בוואטסאפ">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- ═══════════════════════════════════════════════
+     DIALOG — מדיניות ביטול עסקה
+     ═══════════════════════════════════════════════ -->
+<dialog class="legal-dialog" id="modal-cancel" aria-labelledby="cancel-h">
+  <button class="dialog-close" onclick="this.closest('dialog').close()" aria-label="סגרי חלון">✕</button>
+  <h2 id="cancel-h">מדיניות ביטול עסקה</h2>
+  <p>בהתאם לחוק הגנת הצרכן, התשמ"א–1981, ולתקנות עסקת מכר מרחוק:</p>
+  <h3>זכות הביטול</h3>
+  <p>הצרכן רשאי לבטל עסקה בתוך <strong>14 ימים</strong> מיום ביצוע העסקה, או מיום קבלת מסמך גילוי נאות זה — לפי המאוחר מבין השניים.</p>
+  <h3>ביטול לפני תחילת מתן השירות</h3>
+  <p>העסקה תבוטל במלואה, בניכוי דמי ביטול בסך 5% ממחיר העסקה או 100 ₪ — לפי הנמוך מביניהם.</p>
+  <h3>ביטול לאחר תחילת מתן השירות</h3>
+  <p>ניתן לבטל את החלק שטרם סופק. יוחזר הסכום היחסי בניכוי דמי הביטול הנ"ל.</p>
+  <h3>אופן הביטול</h3>
+  <p>הודעת ביטול תישלח בכתב לכתובת הדוא"ל <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a> או בהודעת וואטסאפ ל-<a href="https://wa.me/972507790123">050-779-0123</a>.</p>
+  <h3>פרטי העוסק</h3>
+  <p>אירה פרלמן, עוסק מורשה | ע.מ: 306604380 | תל אביב | טל: 050-779-0123 | <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a></p>
+</dialog>
+
+<!-- ═══════════════════════════════════════════════
+     DIALOG — מדיניות פרטיות
+     ═══════════════════════════════════════════════ -->
+<dialog class="legal-dialog" id="modal-privacy" aria-labelledby="privacy-h">
+  <button class="dialog-close" onclick="this.closest('dialog').close()" aria-label="סגרי חלון">✕</button>
+  <h2 id="privacy-h">מדיניות פרטיות</h2>
+  <p>מדיניות זו נכתבה בהתאם לחוק הגנת הפרטיות, התשמ"א–1981 ותיקון 13 (2025).</p>
+  <h3>מה נאסף?</h3>
+  <p>אתר זה אינו אוסף מידע אישי ישירות. אין טפסי הרשמה, אין מסד נתונים של לקוחות ואין מעקב אחר פעילות.</p>
+  <h3>יצירת קשר</h3>
+  <p>יצירת קשר נעשית דרך WhatsApp — שירות של Meta Platforms Inc. המידע שתשלחי ישמש אך ורק לצורך מתן השירות המבוקש, ולא יועבר לצד שלישי.</p>
+  <h3>קובצי Cookie</h3>
+  <p>אתר זה אינו מפעיל קובצי Cookie משלו. אם אישרת טעינת סרטוני YouTube, Google LLC עשוי להציב קובצי Cookie בדפדפן שלך בהתאם ל<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">מדיניות הפרטיות של Google</a>. ניתן לבטל הסכמה בכל עת — פשוט רעננ את הדף.</p>
+  <h3>זכויותיך</h3>
+  <p>בהתאם לחוק הגנת הפרטיות הישראלי, עומדת לך הזכות לעיין, לתקן ולמחוק מידע המוחזק אצלי. לפניות: <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a>.</p>
+  <h3>בעל מאגר המידע</h3>
+  <p>אירה פרלמן, עוסק מורשה | ע.מ: 306604380 | תל אביב | <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a></p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
