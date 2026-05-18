@@ -845,21 +845,12 @@
       <button class="footer-legal-btn" onclick="document.getElementById('modal-cancel').showModal()">מדיניות ביטול עסקה</button>
       <span aria-hidden="true">·</span>
       <button class="footer-legal-btn" onclick="document.getElementById('modal-privacy').showModal()">מדיניות פרטיות</button>
+      <span aria-hidden="true">·</span>
+      <button class="footer-legal-btn" onclick="document.getElementById('modal-accessibility').showModal()">הצהרת נגישות</button>
     </div>
   </div>
 
   <p class="footer-copy">© אירה פרלמן 2026. כל הזכויות שמורות.</p>
-
-  <div class="footer-accessibility" id="accessibility-statement" role="note" aria-label="הצהרת נגישות">
-    <p>
-      <strong>הצהרת נגישות.</strong> אתר זה עומד ברמת AA של תקן
-      <abbr title="Web Content Accessibility Guidelines 2.1">WCAG 2.1</abbr>,
-      בהתאם לתיקון 35 לחוק שוויון זכויות לאנשים עם מוגבלות.
-      נבדק לאחרונה: מאי 2026.
-      לפניות בנושא נגישות:
-      <a href="mailto:ira.perelman@gmail.com" aria-label="שלחי מייל בנושא נגישות">ira.perelman@gmail.com</a>
-    </p>
-  </div>
 </footer>
 
 <!-- WhatsApp floating button -->
@@ -911,5 +902,47 @@
 </dialog>
 
 <script src="script.js"></script>
+
+<!-- ═══════════════════════════════════════════════
+     DIALOG — הצהרת נגישות
+     ═══════════════════════════════════════════════ -->
+<dialog class="legal-dialog" id="modal-accessibility" aria-labelledby="accessibility-h">
+  <button class="dialog-close" onclick="this.closest('dialog').close()" aria-label="סגרי חלון">✕</button>
+  <h2 id="accessibility-h">הצהרת נגישות</h2>
+
+  <h3>מי אנחנו</h3>
+  <p>אירה פרלמן, מיילדת מוסמכת ומלוות לידה. כתובת: תל אביב. טלפון: <a href="tel:+972507790123">050-779-0123</a>. דוא"ל: <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a>.</p>
+
+  <h3>מחויבות לנגישות</h3>
+  <p>אנו מאמינים שכל אדם זכאי לגשת למידע ולשירותים באופן שווה, ללא קשר למוגבלות. אנו פועלים להנגיש את האתר בהתאם לתיקון 35 לחוק שוויון זכויות לאנשים עם מוגבלות, התשמ"א–1981, ולתקן הישראלי <abbr title="Israeli Standard">IS</abbr> 5568, המבוסס על <abbr title="Web Content Accessibility Guidelines 2.1">WCAG 2.1</abbr> ברמת AA.</p>
+
+  <h3>מה נגיש באתר</h3>
+  <ul>
+    <li>ניווט מלא במקלדת, כולל קישור "דלגי לתוכן" בראש הדף</li>
+    <li>תמיכה בקוראי מסך: תיוג ARIA, כותרות בהיררכיה תקינה, תוויות על כל הכפתורים</li>
+    <li>שפה וכיוון: <code>lang="he" dir="rtl"</code> מוגדרים כראוי</li>
+    <li>אקורדיון שאלות ותשובות ממומש עם רכיבי <code>&lt;details&gt;</code> ו-<code>&lt;summary&gt;</code> נגישים</li>
+    <li>טבלת ההשוואה ממומשת עם <code>role="table"</code> ותוויות עמודות ושורות</li>
+    <li>כפתורי ניווט בהירו מכילים aria-label מתאר</li>
+    <li>כל קישורי הוואטסאפ מכילים aria-label מתאר</li>
+  </ul>
+
+  <h3>מה עדיין אינו נגיש במלואו</h3>
+  <ul>
+    <li><strong>וידאויים ברקע:</strong> הוידאויים הדקורטיביים בכרטיסיות השירותים אינם מכילים כתוביות. מכיוון שמדובר בתוכן ויזואלי דקורטיבי בלבד ללא מידע מהותי, הם אינם דורשים כתוביות לפי התקן — אך אנו בוחנים שיפור.</li>
+    <li><strong>תמונות רקע:</strong> תמונות שנטענות דרך CSS אינן מכילות תיאור alt. תמונות אלו הן דקורטיביות ואינן נושאות מידע.</li>
+  </ul>
+
+  <h3>פניות בנושא נגישות</h3>
+  <p>נתקלת בקושי לגשת לתוכן כלשהו באתר? נשמח לשמוע ולתקן. ניתן לפנות:</p>
+  <ul>
+    <li>דוא"ל: <a href="mailto:ira.perelman@gmail.com">ira.perelman@gmail.com</a></li>
+    <li>טלפון ווואטסאפ: <a href="tel:+972507790123">050-779-0123</a></li>
+  </ul>
+  <p>אנו מתחייבים להשיב תוך 5 ימי עסקים.</p>
+
+  <h3>בדיקה ועדכון</h3>
+  <p>הצהרה זו עודכנה לאחרונה: <strong>מאי 2026</strong>. האתר נבדק ידנית ובאמצעות כלי בדיקה אוטומטיים.</p>
+</dialog>
 </body>
 </html>
