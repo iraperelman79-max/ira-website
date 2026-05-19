@@ -1231,6 +1231,10 @@ h1, h2, h3 { font-weight: inherit; }
   max-width: 1100px;
   margin: 0 auto;
 }
+/* תעודות — כל אחת שורה נפרדת על כל הרוחב */
+.stat-item--cert {
+  grid-column: 1 / -1;
+}
 .stat-item {
   display: flex;
   flex-direction: column;
@@ -1246,10 +1250,7 @@ h1, h2, h3 { font-weight: inherit; }
   line-height: 1;
   letter-spacing: .02em;
 }
-/* תיבות הסמכה — ביטוי שלם בשורה אחת */
-.stat-item--cert {
-  justify-content: center;
-}
+/* (merged into .credentials-inner rule above) */
 .stat-cert {
   font-family: var(--sans);
   font-weight: 300;
@@ -2106,7 +2107,6 @@ h1, h2, h3 { font-weight: inherit; }
     gap: 1.75rem 1rem;
   }
   .stat-num { font-size: clamp(1.4rem, 6vw, 2rem); }
-  .stat-item--cert { grid-column: 1 / -1; }
   .stat-cert { font-size: .78rem; letter-spacing: .1em; }
 }
 
