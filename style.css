@@ -1115,40 +1115,47 @@ h1, h2, h3 { font-weight: inherit; }
 .about {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
   min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 5vw, 4rem);
+  isolation: isolate;
 }
 
-/* Full-screen background video */
+/* Full-screen background video — explicit top/left/right/bottom for mobile Safari */
 .about-bg-video {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  z-index: 0;
+  z-index: -2;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  pointer-events: none;
 }
 
-/* Dark gradient overlay for text legibility */
+/* Darker overlay for text legibility */
 .about-overlay {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(20, 30, 32, .45) 0%,
-    rgba(20, 30, 32, .60) 60%,
-    rgba(20, 30, 32, .70) 100%
-  );
-  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 22, 24, .65);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .about-text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 640px;
   margin: 0 auto;
   display: flex;
