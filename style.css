@@ -2392,6 +2392,11 @@ h1, h2, h3 { font-weight: inherit; }
   line-height: 1.4;
 }
 
+.fit-item p strong.s02-emph {
+  font-size: clamp(.84rem, 1.5vw, .92rem);
+  margin-bottom: 0;
+}
+
 .fit-item p {
   font-family: var(--sans);
   font-weight: 300;
